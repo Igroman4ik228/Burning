@@ -7,6 +7,10 @@
 	<!--	important	 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +24,7 @@
 	<!--  Header  -->
 	<header class="header">
 		<div class="container">
-			<div class="header__row">
+			<div data-aos="fade-down" class="header__row">
 				<a class="header__logo" href="#"><svg class="header__logo-svg" width="31" height="48"
 						viewBox="0 0 31 48" fill="white" xmlns="http://www.w3.org/2000/svg">
 						<g clip-path="url(#clip0_0_7)">
@@ -51,13 +55,13 @@
 				</a>
 			</div>
 			<div class="header__content">
-				<h2 class="header__subtitle">
+				<h2 data-aos="fade-right" data-aos-duration="500" class="header__subtitle">
 					Not tne event. The life
 				</h2>
-				<h1 class="header__title">
+				<h1 data-aos="fade-right" data-aos-duration="1000" class="header__title">
 					Burning MAN
 				</h1>
-				<button class="header__btn">Book the tickets</button>
+				<button data-aos="fade-right" data-aos-duration="1500" class="header__btn">Book the tickets</button>
 			</div>
 		</div>
 	</header>
@@ -65,9 +69,9 @@
 	<main class="main">
 		<section class="about">
 			<div class="container">
-				<h2 class="about__title">About the event</h2>
+				<h2 data-aos="fade-right" class="about__title">About the event</h2>
 				<div class="about__content">
-					<div class="about__block-left">
+					<div data-aos="zoom-in-right" class="about__block-left">
 						<h3 class="about__subtitle">Rebuilding the society</h3>
 						<div class="about__text-01">
 							<p>Burning Man is a network of people inspired by the values reflected in the Ten Principles
@@ -77,7 +81,7 @@
 
 						</div>
 					</div>
-					<div class="about__block-right">
+					<div data-aos="zoom-in-left" class="about__block-right">
 						<h3 class="about__subtitle">This drives us</h3>
 						<div class="about__text-02">
 							<p>Burning Man Project will bring experiences to people in grand, awe-inspiring and joyful
@@ -91,9 +95,9 @@
 					</div>
 				</div>
 				<div class="about__img">
-					<img src="./img/about/img1.jpg" alt="">
-					<img src="./img/about/img2.jpg" alt="">
-					<img src="./img/about/img3.jpg" alt="">
+					<img data-aos="flip-up" data-aos-duration="400" src="./img/about/img1.jpg" alt="">
+					<img data-aos="flip-up" data-aos-duration="900" src="./img/about/img2.jpg" alt="">
+					<img data-aos="flip-up" data-aos-duration="1300" src="./img/about/img3.jpg" alt="">
 				</div>
 			</div>
 
@@ -102,7 +106,7 @@
 	<!--  Footer  -->
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__row">
+			<div data-aos="fade-up" data-aos-duration="1300" class="footer__row">
 				<a class="footer__text" href="#">
 					<p>©1989-2020 burning man project</p>
 				</a>
@@ -113,6 +117,17 @@
 		</div>
 	</footer>
 
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+		integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		AOS.init({
+			once: true
+		});
+	</script>
 </body>
 
 </html>
