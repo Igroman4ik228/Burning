@@ -18,6 +18,7 @@ body {
 
 .header {
 	background-image: url(../img/header-bg.jpg);
+	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -118,6 +119,49 @@ body {
 	color: rgb(199, 195, 195);
 }
 
+@media (max-width: 650px) {
+	.header {
+		&__content {
+			text-align: center;
+		}
+
+		&__title {
+			font-size: 80px;
+			line-height: 120px;
+		}
+
+		&__subtitle {
+			font-size: 25px;
+
+		}
+
+		&__logo {
+			margin-right: 0;
+		}
+
+		&__row {
+			flex-direction: column;
+			align-self: center;
+			justify-content: center;
+			text-align: center;
+			margin-bottom: 164px;
+		}
+
+		&__number {
+			margin-left: 0;
+		}
+	}
+
+	.nav {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.nav ul li:not(:last-child) {
+		margin-right: 25px;
+	}
+}
+
 
 
 .about {
@@ -146,12 +190,17 @@ body {
 		margin-bottom: 19px;
 	}
 
+	&__text-01 p {
+		max-width: 564px;
+	}
+
 	&__text-01,
 	&__text-02 {
 		font-family: 'Open Sans';
 		font-size: 16px;
 		line-height: 26px;
 		text-align: justify;
+		max-width: 560px;
 		overflow: auto;
 	}
 
@@ -178,6 +227,78 @@ body {
 	&__img img:not(:last-child) {
 		margin-right: 26px;
 	}
+
+	&__img-01 {
+		height: auto;
+		width: 100%;
+		max-width: 270px;
+	}
+
+	&__img-02 {
+		height: auto;
+		width: 100%;
+		max-width: 270px;
+	}
+
+	&__img-03 {
+		height: auto;
+		width: 100%;
+		max-width: 570px;
+	}
+}
+
+
+
+@media (max-width: 1200px) {
+	.about {
+		&__title {
+			text-align: center;
+		}
+
+		&__content {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__block-left {
+			margin-bottom: 20px;
+		}
+
+		&__text-01 {
+			margin-right: 0;
+		}
+
+		&__img img:not(:last-child) {
+			margin-right: 0px;
+		}
+
+		&__img img:first-child {
+			margin-right: 26px;
+			margin-bottom: 26px;
+		}
+
+		&__img {
+			text-align: center;
+			max-width: 1140px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+
+}
+
+@media (max-width: 650px) {
+	.about {
+		&__img img:first-child {
+			margin-right: 0;
+		}
+
+		&__img img:not(:last-child) {
+			margin-bottom: 26px;
+		}
+
+	}
 }
 
 
@@ -193,5 +314,35 @@ body {
 	&__text {
 		margin-right: 55px;
 		color: #000000;
+	}
+}
+
+@media (max-width: 1200px) {
+	.footer {
+		&__row {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+
+	.footer {
+		padding: 80px 0;
+
+		&__row {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		&__text {
+			margin-right: 0;
+
+		}
+
+		&__text-wrapper:first-child {
+			margin-bottom: 25px;
+
+		}
 	}
 }
