@@ -192,8 +192,9 @@ body {
   padding: 107px 0; }
   .footer__row {
     display: flex; }
+  .footer__text-wrapper:first-child {
+    margin-right: 55px; }
   .footer__text {
-    margin-right: 55px;
     color: #000000; }
 
 @media (max-width: 1200px) {
@@ -208,4 +209,5 @@ body {
     .footer__text {
       margin-right: 0; }
     .footer__text-wrapper:first-child {
-      margin-bottom: 25px; } }
+      margin-bottom: 25px;
+      margin-right: 0; } }
