@@ -206,8 +206,6 @@ body {
     .footer__row {
       flex-direction: column;
       text-align: center; }
-    .footer__text {
-      margin-right: 0; }
     .footer__text-wrapper:first-child {
       margin-bottom: 25px;
       margin-right: 0; } }
