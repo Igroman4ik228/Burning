@@ -311,8 +311,11 @@ body {
 		display: flex;
 	}
 
-	&__text {
+	&__text-wrapper:first-child {
 		margin-right: 55px;
+	}
+
+	&__text {
 		color: #000000;
 	}
 }
@@ -342,7 +345,7 @@ body {
 
 		&__text-wrapper:first-child {
 			margin-bottom: 25px;
-
+			margin-right: 0;
 		}
 	}
 }
