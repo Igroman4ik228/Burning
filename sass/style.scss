@@ -86,8 +86,8 @@ body {
 		padding: 17px 49px;
 		background: none;
 		border: 1px solid #FFFFFF;
-		transition: color 0.3s ease-in;
-		transition: background-color 0.3s ease-in;
+		transition: color 0.25s ease-in;
+		transition: background-color 0.25s ease-in;
 	}
 
 	&__btn:hover {
@@ -201,7 +201,7 @@ body {
 		line-height: 26px;
 		text-align: justify;
 		max-width: 560px;
-		overflow: auto;
+
 	}
 
 	&__text-01 p+p {
@@ -215,12 +215,10 @@ body {
 	&__text-01 {
 		margin-right: 36px;
 		max-width: 564px;
-		max-height: 146px;
 	}
 
 	&__text-02 {
 		max-width: 560px;
-		max-height: 192px;
 	}
 
 
@@ -261,7 +259,7 @@ body {
 		}
 
 		&__block-left {
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 		}
 
 		&__text-01 {
