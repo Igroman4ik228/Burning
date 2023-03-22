@@ -25,6 +25,7 @@ body {
 	padding-top: 57px;
 	color: white;
 	margin-bottom: 113px;
+	min-height: 700px;
 
 	&__row {
 		display: flex;
@@ -144,7 +145,7 @@ body {
 			align-self: center;
 			justify-content: center;
 			text-align: center;
-			margin-bottom: 164px;
+			margin-bottom: 20%;
 		}
 
 		&__number {
